@@ -1,0 +1,58 @@
+{
+  "name": "test-srv",
+  "cpu": {
+    "count": 2,
+    "speed": "STANDARD",
+    "coresPerSocket": 1
+  },
+  "memoryGb": 2,
+  "disk": [{
+    "id": "133e3798-a976-4ba3-8611-47d3df6f7154",
+    "scsiId": 0,
+    "sizeGb": 10,
+    "speed": "STANDARD",
+    "state": "NORMAL"
+  }],
+  "networkInfo": {
+    "primaryNic": {
+      "id": "30b2778b-22b0-4282-b229-ec7f98878eaf",
+      "privateIpv4": "10.0.0.6",
+      "ipv6": "2a00:47c0:111:1328:345:e2e8:fe7b:b428",
+      "vlanId": "44089b46-d01f-43bb-a356-206af33ab850",
+      "vlanName": "test-range",
+      "networkAdapter": "VMXNET3",
+      "macAddress": "00:50:56:bb:62:09",
+      "key": 4000,
+      "state": "NORMAL"
+    },
+    "additionalNic": [],
+    "networkDomainId": "845f56ff-ba32-432c-9801-78d22cd33b2c"
+  },
+  "softwareLabel": [],
+  "sourceImageId": "07a1d8b9-9a63-4b79-b630-9b6a734695da",
+  "createTime": "2017-01-13T14:35:48.000Z",
+  "deployed": true,
+  "started": false,
+  "state": "NORMAL",
+  "guest": {
+    "operatingSystem": {
+      "id": "UBUNTU1464",
+      "displayName": "UBUNTU14/64",
+      "family": "UNIX"
+    },
+    "vmTools": {
+      "type": "VMWARE_TOOLS",
+      "versionStatus": "CURRENT",
+      "runningStatus": "NOT_RUNNING",
+      "apiVersion": 9356
+    },
+    "osCustomization": true
+  },
+  "virtualHardware": {
+    "version": "vmx-10",
+    "upToDate": true
+  },
+  "tag": [],
+  "id": "15111629-2fb4-46a3-8244-3ff11a401afa",
+  "datacenterId": "EU6"
+}
