@@ -5,5 +5,12 @@
   "main": "index.js",
   "repository": "git@github.com:florianb/printen.git",
   "author": "Florian Breisch <florian.breisch@mindkeeper.solutions>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "ava": "^0.18.1",
+    "chalk": "^1.1.3"
+  }
 }
