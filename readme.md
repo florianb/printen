@@ -11,7 +11,7 @@
             ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 </pre></h1>
 
-> Print your objects nice and tasty
+> These [printens][printens] look so tasty, and quite similar to a package called stringify-object, which I love.
 
 ## Why
 
@@ -26,4 +26,6 @@
 
 ## License
 
-MIT © [Florian Breisch]()
+MIT © [Florian Breisch](https://github.com/florianb)
+
+[printens]: http://www.diaryofamadhausfrau.com/2010/12/aachener-printen-christmas-market.html "A printen recipe"
