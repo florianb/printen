@@ -56,7 +56,7 @@ Unnecessary clutter is hidden from the output, as the prefixes for subsequent at
 $ node printen-example.js | grep pros                   
 pros.0:	They are gross
 pros.1:	They are tasty
-``
+```
 
 The key-value separator is in fact a colon and a tab-character therefore you can use cut to access the value:
 
