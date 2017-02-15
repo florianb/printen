@@ -61,7 +61,7 @@ pros.1:	They are tasty
 The key-value separator is in fact a colon and a tab-character therefore you can use cut to access the value:
 
 ```
-$ node test.js | grep dependencies | cut -f 2
+$ node printen-example.js | grep pros | cut -f 2
 They are gross
 They are tasty
 ```
