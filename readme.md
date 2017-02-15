@@ -72,6 +72,8 @@ They are tasty
 
 ### `printen(object, prefix)`
 
+|Parameter|Type|Necessity|Description|
+|---|---|---|---|
 |`object`|`PlainObject`|mandatory|Plain object to be stringified by printen|
 |`prefix`|`String`|optional|Prefix to be used before each line, use this f.e. to indent the output|
 
