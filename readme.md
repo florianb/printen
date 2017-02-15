@@ -43,7 +43,7 @@ const exampleData = {
 	}
 }
 
-console.log(printen(exampleData)
+console.log(printen(exampleData))
 ```
 
 prints
