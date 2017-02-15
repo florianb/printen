@@ -1,9 +1,9 @@
 const chalk = require('chalk')
 
 const keySeparator = '.'
-const keyValueSeparator = ':'
+const keyValueSeparator = ':\t'
 const coloredKeySeparator = chalk.blue(keySeparator)
-const coloredKeyValueSeparator = chalk.gray(keyValueSeparator)
+const coloredKeyValueSeparator = chalk.dim(keyValueSeparator)
 
 function keyMax(object) {
 	Object.keys(object).reduce((l, v) => Math.max(l, v), 0)
@@ -24,11 +24,10 @@ function stringify(object, prefix, level) {
 			keyIndex += 1
 		}
 
-		if (result.length > 0 ||
-			level <= 0) {
-			result += chalk.gray(prefix)
+		if (result.length > 0 || level <= 0) {
+			result += chalk.black.hidden(prefix)
 			if (keyIndex >= 0 && level > 0) {
-				result = result.concat(chalk.gray(keySeparator))
+				result = result.concat(coloredKeySeparator)
 			}
 		}
 
@@ -37,25 +36,25 @@ function stringify(object, prefix, level) {
 
 		if (typeof value === 'object') {
 			if (Object.keys(value).length > 0) {
-				const newPrefix = level > 0 ? prefix.concat(keySeparator, key) : prefix.concat(key)
+				const newPrefix = level > 0 ? prefix.concat(keySeparator) : String(prefix)
 				result += chalk.blue(keySeparator)
-				result += stringify(value, newPrefix, level + 1)
+				result += stringify(value, newPrefix.concat(key), level + 1)
 			} else {
 				if (Array.isArray(value)) {
-					result = result.concat(keyValueSeparator, ' <none>')
+					result = result.concat(coloredKeyValueSeparator, '[none]')
 				} else {
-					result = result.concat(keyValueSeparator, ' <none>')
+					result = result.concat(coloredKeyValueSeparator, '{none}')
 				}
 				result += `\n`
 			}
 		} else {
-			result = result.concat(keyValueSeparator, ' ', value, '\n')
+			result = result.concat(coloredKeyValueSeparator, value, '\n')
 		}
 	})
 
 	return result
 }
 
-module.exports = function(object) {
-	return stringify(object, '  ')
+module.exports = function(object, prefix) {
+	return stringify(object, prefix)
 }
