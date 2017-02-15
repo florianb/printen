@@ -15,8 +15,8 @@
 
 ## Why
 
-* Printed JSON objects should be easy readable by humans
-* Printed JSON objects should be easy readable by robots
+* Printed plain objects should be easy readable by humans
+* Printed plain objects should be easy readable by robots
 
 ## Install
 
@@ -69,6 +69,11 @@ They are tasty
 ![](https://media.giphy.com/media/Ns3TQiTMrJuTK/giphy.gif)
 
 ## API
+
+### `printen(object, prefix)`
+
+|`object`|`PlainObject`|mandatory|Plain object to be stringified by printen|
+|`prefix`|`String`|optional|Prefix to be used before each line, use this f.e. to indent the output|
 
 ## License
 
