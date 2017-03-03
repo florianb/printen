@@ -3,13 +3,17 @@
 const printen = require('./index')
 const testData = require('./test-data')
 const packageJson = require('./package.json')
+// This is quite good.. :)
+
+// Lirum larum.. sooooo giiid!
+/* Or quite better is this. */
 
 const exampleData = {
 	title: "Printen Examples",
 	stars: Number.POSITIVE_INFINITY,
-	cons: undefined,
+	quite: undefined,
 	pros: [
-		'They are gross',
+		'They are quite gross',
 		'They are tasty'
 	],
 	cons: [],
@@ -21,5 +25,12 @@ const exampleData = {
 
 // console.log(printen(testData, '  '))
 console.log(printen(exampleData))
+
+console.log(printen("exampleData", '  '))
+
+console.log(printen(100, '---'))
+
+
+console.log(printen(100.00, ' + '))
 
 // console.log(printen(packageJson))

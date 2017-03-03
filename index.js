@@ -17,6 +17,10 @@ function stringify(object, prefix, level) {
 		prefix = ''
 	}
 
+	if (typeof value !== 'object') {
+		return prefix + object
+	}
+
 	let result = ''
 	let keyIndex = -1
 	Object.keys(object).forEach(key => {
