@@ -17,7 +17,9 @@ function stringify(object, prefix, level) {
 		prefix = ''
 	}
 
-	if (typeof object !== 'object') {
+	if (typeof object !== 'object' ||
+		 object === null ||
+		 object === undefined) {
 		return prefix + object
 	}
 
